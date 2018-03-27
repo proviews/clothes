@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Build-Jdk: 9.0.4
+Implementation-Title: SSJ
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: cn.itcast
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/SSJ
+Created-By: Maven Integration for Eclipse
+

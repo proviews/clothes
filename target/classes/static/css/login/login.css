@@ -1,0 +1,21 @@
+#login{
+	width:600px;
+	margin:0 auto;
+	margin-top:150px;
+}
+h1{
+	text-align:center;
+	padding:40px;
+}
+.layui-form-pane{
+	margin-left:60px;
+	background-color: white;
+	opacity:0.8;
+	height:420px;
+}
+.layui-form-item{
+	margin-left:110px;
+}
+table{
+	margin-left:110px;
+}
