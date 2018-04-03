@@ -3,6 +3,7 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\Constants.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\EmployeeTable.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\Research.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\util\ZipUtils.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\biz\StorageJson.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\UserAdministratorRights.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\QualityMonitor.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductionRecordStatusTable.java
@@ -14,8 +15,10 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\FinancialMana
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\ProviderController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductManagementFunctionTable.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\LiningTable.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\StorageService.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\MaterialList.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\UserStaffPrivileges.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\impl\StorageServiceImpl.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\NormalRequest.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductType.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\util\WebUtils.java
@@ -29,6 +32,7 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductStyle.
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\UserTable.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\util\ShowApiLogger.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\FinancialManagementPayroll.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\InventoryManagementDao.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\FileItem.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\config\ConfigConversion.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\FinancialManagementAccountPayableDao.java
@@ -43,6 +47,7 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\Application.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\InventoryManagement.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\utils\FastJsonUtil.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\FinancialManagementAccountReceivable.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\StorageController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\AdminController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\UserDao.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\IngredientsTable.java

@@ -11,6 +11,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/index.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/provider/provider.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/storage/storage.js"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -71,7 +72,6 @@
             <dd><a id="c1" href="javascript:;">服装成品库存管理</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="">一键导入xml报表</a></li>
       </ul>
     </div>
   </div>
