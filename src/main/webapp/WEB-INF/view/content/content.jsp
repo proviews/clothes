@@ -12,6 +12,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/index.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/provider/provider.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/storage/storage.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/produce/produceRecord.js"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">

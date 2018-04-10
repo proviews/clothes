@@ -1,6 +1,8 @@
 package cn.clothes.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -34,6 +36,7 @@ public class ProductionRecordStatusTable {
      * @mbg.generated Fri Mar 16 14:27:05 CST 2018
      */
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getStatusno() {
         return statusno;
     }

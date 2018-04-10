@@ -1,3 +1,4 @@
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\ProduceController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ManagementFunction.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\Constants.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\EmployeeTable.java
@@ -8,9 +9,12 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\UserAdministr
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\QualityMonitor.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductionRecordStatusTable.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductionStatement.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\utils\ExportExcel.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\config\ConfigInteceptor.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\util\ShowApiUtils.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\ProduceDao.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\UserRight.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\impl\ProduceServiceImpl.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\FinancialManagementAccountPayable.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\ProviderController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\ProductManagementFunctionTable.java
@@ -37,6 +41,7 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\FileItem.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\config\ConfigConversion.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\FinancialManagementAccountPayableDao.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\ShowApiRequest.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\ProduceService.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\UserService.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\utils\Result.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\impl\UserServiceImpl.java
@@ -51,6 +56,7 @@ F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\StorageCo
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\controller\AdminController.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\dao\UserDao.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\domain\IngredientsTable.java
+F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\biz\ProduceBiz.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\impl\FinancialManagementAccountPayableServiceImpl.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\com\show\api\util\ResData.java
 F:\workspace-sts-3.9.2.RELEASE\SSJ\src\main\java\cn\clothes\service\FinancialManagementAccountPayableService.java

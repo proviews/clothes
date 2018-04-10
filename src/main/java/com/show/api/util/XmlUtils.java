@@ -575,7 +575,7 @@ public final class XmlUtils {
 	public static void validateXml(Node root, InputStream xsd) throws Exception {
 		try {
 			Source source = new StreamSource(xsd);
-			Schema schema = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(source);
+			Schema schema = SchemaFactory.newInstance(XMLConstants.XML_NS_URI).newSchema(source);
 
 			Validator validator = schema.newValidator();
 			validator.validate(new DOMSource(root));
@@ -631,8 +631,8 @@ public final class XmlUtils {
 	 */
 	public static void setNamespace(Element element, String namespace, String schemaLocation) {
 		element.setAttributeNS(XMLConstants.XMLNS_ATTRIBUTE_NS_URI, XMLConstants.XMLNS_ATTRIBUTE, namespace);
-		element.setAttributeNS(XMLConstants.XMLNS_ATTRIBUTE_NS_URI, XMLNS_XSI, XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI);
-		element.setAttributeNS(XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI, XSI_SCHEMA_LOCATION, schemaLocation);
+		element.setAttributeNS(XMLConstants.XMLNS_ATTRIBUTE_NS_URI, XMLNS_XSI, XMLConstants.XML_NS_URI);
+		element.setAttributeNS(XMLConstants.XML_NS_URI, XSI_SCHEMA_LOCATION, schemaLocation);
 	}
 
 	/**
