@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,6 +13,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -24,9 +24,12 @@ import com.alibaba.fastjson.JSON;
 import cn.clothes.biz.StorageJson;
 import cn.clothes.domain.InventoryManagement;
 import cn.clothes.service.StorageService;
+import cn.clothes.utils.ExportBeanExcel;
 
 @Controller
 public class StorageController {
+	
+	private static String[][] content;
 	@Autowired
 	private StorageService storageService;
 	@RequestMapping("/storage")
@@ -80,9 +83,29 @@ public class StorageController {
 		return json;
 	}
 	@RequestMapping("/download")
-	public String download(HttpServletResponse response) {
+	public String download(HttpServletResponse response,Model model) {
 		List<InventoryManagement> list = storageService.findAll();
-		System.out.println(list.get(0).getClothesnames());
+      List<String> listName = new ArrayList<>();
+      listName.add("inventoryNum");
+      listName.add("stockNumber");
+      listName.add("clothesNames");
+      listName.add("size");
+      listName.add("color");
+      listName.add("unit");
+      listName.add("price");
+      listName.add("date");
+      List<String> idName = new ArrayList<>();
+      idName.add("inventorynum");
+      idName.add("stocknumber");
+      idName.add("clothesnames");
+      idName.add("size");
+      idName.add("color");
+      idName.add("unit");
+      idName.add("price");
+      idName.add("date");
+      ExportBeanExcel<InventoryManagement> exportBeanExcelUtil = new ExportBeanExcel();
+      exportBeanExcelUtil.exportExcel("库存表",listName,idName,list);
+      model.addAttribute("export", "ok");
 		return "storage/storage";
 	}
 }

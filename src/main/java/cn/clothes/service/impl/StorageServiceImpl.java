@@ -1,10 +1,12 @@
 package cn.clothes.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import cn.clothes.dao.InventoryManagementDao;
@@ -18,9 +20,18 @@ public class StorageServiceImpl implements StorageService {
 
 	@Override
 	public void saveBatch(List<InventoryManagement> list) {
-		// TODO Auto-generated method stub
+		
 		for (InventoryManagement inventoryManagement : list) {
-			inventoryManagementDao.saveAndFlush(inventoryManagement);
+			
+			
+			InventoryManagement m = inventoryManagementDao.findByClothesnames(inventoryManagement.getClothesnames());
+			
+			if(m!=null) {
+				inventoryManagementDao.delete(m);
+				inventoryManagementDao.save(inventoryManagement);
+				
+			}
+			inventoryManagementDao.save(inventoryManagement);
 		}
 
 	}

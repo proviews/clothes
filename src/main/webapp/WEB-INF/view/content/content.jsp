@@ -13,6 +13,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/provider/provider.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/storage/storage.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/produce/produceRecord.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/indexload.js"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -20,17 +21,11 @@
     <div class="layui-logo layui-bg-green">服装生产系统管理</div>
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
-      <li class="layui-nav-item"><a href="">控制台</a></li>
-      <li class="layui-nav-item"><a href="">商品管理</a></li>
-      <li class="layui-nav-item"><a href="">用户</a></li>
-      <li class="layui-nav-item">
-        <a href="javascript:;">其它系统</a>
-        <dl class="layui-nav-child">
-          <dd><a href="">邮件管理</a></dd>
-          <dd><a href="">消息管理</a></dd>
-          <dd><a href="">授权管理</a></dd>
-        </dl>
-      </li>
+      <li class="layui-nav-item"><a id="a" href=""></a></li>
+      <li class="layui-nav-item"><a id="b" href=""></a></li>
+      <li class="layui-nav-item"><a id="c" href=""></a></li>
+      <li class="layui-nav-item"><a id="d" href=""></a></li>
+      <li class="layui-nav-item"><img style="height:70px;" id="e"></a></li>
     </ul>
     <ul class="layui-nav layui-layout-right layui-bg-red">
       <li class="layui-nav-item">

@@ -1,10 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/static/layui/layer/mobile/need/layer.css">
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/layer/layer.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/echarts.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/jquery.ocupload-1.1.2.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/storage/input.js"></script>
+<c:if test="${not empty export }">
+	<script>
+	messageboxFunc();
+	 function messageboxFunc() {
+         layer.open({
+             type:0,
+             title:'SUCCESS',
+             shadeClose:true,
+             area:['100px','160px'],
+             content:"已成功导出到C盘根目录"
+         })
+     }
+	</script>
+</c:if>
 <div style="float:left;"><button name="myFile" id="myButton" class="layui-btn layui-btn-warm">一键导入库存报表</button></div>
 <div style="margin-left:86%;"><button id="output" class="layui-btn layui-btn-success">一键导出库存报表</button></div>
 <div id="main" style="width: 500px;height:400px;float:left"></div>
