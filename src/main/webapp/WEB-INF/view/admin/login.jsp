@@ -14,10 +14,14 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/swat.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/code.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/register.js"></script>
+
 </head>
 <body background="${pageContext.request.contextPath }/static/img/produce.jpg">
 <div id="login">
-<c:if test="${not empty message }"><script type="text/javascript">alert("注册成功！")</script></c:if>
+<c:if test="${not empty message }"><script type="text/javascript">
+	alert("注册成功!");
+</script>
+</c:if>
 	<form class="layui-form layui-form-pane" action="/loginInfo" method="post" id="form">
 	<h1>服装生产管理系统</h1>
   <div class="layui-form-item">

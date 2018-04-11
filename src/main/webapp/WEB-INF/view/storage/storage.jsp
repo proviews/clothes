@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/static/layui/layer/mobile/need/layer.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/static/layer/mobile/need/layer.css">
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/layer/layer.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/echarts.min.js"></script>

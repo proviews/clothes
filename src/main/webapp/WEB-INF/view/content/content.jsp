@@ -21,10 +21,10 @@
     <div class="layui-logo layui-bg-green">服装生产系统管理</div>
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
-      <li class="layui-nav-item"><a id="a" href=""></a></li>
-      <li class="layui-nav-item"><a id="b" href=""></a></li>
-      <li class="layui-nav-item"><a id="c" href=""></a></li>
-      <li class="layui-nav-item"><a id="d" href=""></a></li>
+      <li class="layui-nav-item"><a id="a" href="#"></a></li>
+      <li class="layui-nav-item"><a id="b" href="#"></a></li>
+      <li class="layui-nav-item"><a id="c" href="#"></a></li>
+      <li class="layui-nav-item"><a id="d" href="#"></a></li>
       <li class="layui-nav-item"><img style="height:70px;" id="e"></a></li>
     </ul>
     <ul class="layui-nav layui-layout-right layui-bg-red">

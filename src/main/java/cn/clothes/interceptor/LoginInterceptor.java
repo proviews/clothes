@@ -13,7 +13,6 @@ public class LoginInterceptor implements HandlerInterceptor{
 			throws Exception {
 		// TODO Auto-generated method stub
 		 Object userTable = request.getSession().getAttribute("userTable");
-		 System.out.println(userTable);
 		    if (userTable == null) {
 		      response.sendRedirect("/login.html");
 		      return false;

@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 public class ProductRecordTable implements Serializable{
 	@Id
 	@GeneratedValue
-    private Integer id;
+    private Long id;
 
     private Integer productrecordtableid;
 
@@ -58,11 +58,11 @@ public class ProductRecordTable implements Serializable{
 		this.productStyle = productStyle;
 	}
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -28,7 +28,7 @@ layui.use('table', function(){
     ,id: 'testReload'
     ,page: false //开启分页
     ,cols: [[ //表头
-    	{field: 'id', title: 'ID', width:60, sort: true, fixed: 'left'}
+    	{field: 'id', title: '编号', width:80, sort: true, fixed: 'left'}
         ,{field: 'productnum', title: '产品数量', width:100, sort: true} 
         ,{field: 'inspectiontime', title: '预期时间', width: 120, sort: true}
         ,{field: 'deliverytime', title: '最迟时间', width: 120, sort: true}
@@ -36,7 +36,7 @@ layui.use('table', function(){
         ,{title: '产品风格', width: 106, templet:'<div>{{createFormat(d.productStyle.stylenames)}}</div>',sort: true}
         ,{title: '产品类型', width: 106, templet:'<div>{{createFormat(d.productType.producttype)}}</div>',sort: true}
         ,{title: '产品状态', width: 106, templet:'<div>{{createFormat(d.productionRecordStatusTable.status)}}</div>',sort: true}
-        ,{field: 'responsibleperson', title: '负责人', width: 120}
+        ,{field: 'responsibleperson', title: '负责人', width: 100}
         ,{field:'right', title: '操作', width:177,toolbar:"#barDemo"}
       ]]
   });
@@ -49,42 +49,22 @@ layui.use('table', function(){
           ,maxmin: true
           ,title: '添加供应商'
           ,area: ['480px', '525px'] //宽高
-          ,content: '/showAdd'
+          ,content: '/showAddProduce'
           ,end: function(){  
               // 如果是通过单击关闭按钮关闭弹出层，父画面没有此表单  
               if($("#popupForm").length === 1){  
-                  $.post("${pageContext.request.contextPath }/addProvider",$("#popupForm").serialize(),function(data){
+                  $.post("${pageContext.request.contextPath }/addProduce",$("#popupForm").serialize(),function(data){
                   	if(data.state==200){
                 	  layer.msg("添加成功!", {icon: 6});
                   	table.reload('testReload');
                   	}else{
-                        layer.msg("删除失败", {icon: 5});
+                        layer.msg("添加失败", {icon: 5});
                     } 
                   });  
               }  
           }
       })
   });
-  
-  //分页
-  layui.use('laypage', function(){
-  var laypage = layui.laypage;
-laypage.render({
-  elem: '#demo'
-  ,jump: function(obj, first){
-    //obj包含了当前分页的所有参数，比如：
-    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-    console.log(obj.limit); //得到每页显示的条数
-    //首次不执行
-    if(!first){
-      //do something
-      
-    }
-  }
-});
-});
-  
-  
   
  //监听工具条
   table.on('tool(useruv)', function(obj){
@@ -93,7 +73,7 @@ laypage.render({
         layer.confirm('真的删除行么', function(index){
             console.log(data);
             $.ajax({
-                url: "/providerDel",
+                url: "/produceDel",
                 type: "POST",
                 data:{"id":data.id},
                 dataType: "json",
@@ -118,11 +98,11 @@ laypage.render({
 	            ,maxmin: true
 	            ,title: '修改 ID 为'+data.id+'的供应商'
 	            ,area: ['480px', '525px'] //宽高
-	            ,content: '/showProviderEdit?id='+data.id
+	            ,content: '/showProduceEdit?id='+data.id
 	            ,end: function(){  
 	                // 如果是通过单击关闭按钮关闭弹出层，父画面没有此表单  
 	                if($("#popupForm").length === 1){  
-	                    $.post("${pageContext.request.contextPath }/editProvider",$("#popupForm").serialize(),function(){
+	                    $.post("${pageContext.request.contextPath }/editProduce",$("#popupForm").serialize(),function(){
 	                    	layer.msg("修改成功!", {icon: 6});
 	                    	table.reload('testReload');
 	                    });  

@@ -16,7 +16,7 @@ public class ProductStyle {
      *
      * @mbg.generated Fri Mar 16 14:27:05 CST 2018
      */
-    private Integer styleno;
+    private Long styleno;
 
     /**
      *
@@ -37,7 +37,7 @@ public class ProductStyle {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer getStyleno() {
+    public Long getStyleno() {
         return styleno;
     }
 
@@ -49,7 +49,7 @@ public class ProductStyle {
      *
      * @mbg.generated Fri Mar 16 14:27:05 CST 2018
      */
-    public void setStyleno(Integer styleno) {
+    public void setStyleno(Long styleno) {
         this.styleno = styleno;
     }
 

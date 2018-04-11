@@ -30,7 +30,7 @@ layui.use('table', function(){
     ,id: 'testReload'
     ,page: true //开启分页
     ,cols: [[ //表头
-      {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+      {field: 'id', title: '编号', width:80, sort: true, fixed: 'left'}
       ,{field: 'orderid', title: '订单ID', width:80, sort: true}
       ,{field: 'orderdate', title: '订单日期', width:110, sort: true} 
       ,{field: 'billtype', title: '账单类型', width:100}
@@ -76,7 +76,7 @@ layui.use('table', function(){
                 	  layer.msg("添加成功!", {icon: 6});
                   	table.reload('testReload');
                   	}else{
-                        layer.msg("删除失败", {icon: 5});
+                        layer.msg("添加失败", {icon: 5});
                     } 
                   });  
               }  
