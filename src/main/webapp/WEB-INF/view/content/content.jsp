@@ -14,6 +14,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/storage/storage.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/produce/produceRecord.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/indexload.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/control/control.js"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -66,6 +67,13 @@
           <a href="javascript:;">库存管理功能</a>
           <dl class="layui-nav-child">
             <dd><a id="c1" href="javascript:;">服装成品库存管理</a></dd>
+          </dl>
+        </li>
+         <li class="layui-nav-item">
+          <a href="javascript:;">流程监控</a>
+          <dl class="layui-nav-child">
+            <dd><a id="d1" href="javascript:;">生产流程图</a></dd>
+            <dd><a id="d2" href="javascript:;">生产监控</a></dd>
           </dl>
         </li>
       </ul>
